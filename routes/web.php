@@ -27,6 +27,7 @@ Route::get('/hello/{name}', function ($name) {
 				);
 });
 
+
 Route::get('/user/{id}/{name}', function ($id, $name) {
 
 	return 'User id is: ' . $id . ' Name is: ' . $name;
