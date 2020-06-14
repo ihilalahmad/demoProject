@@ -30,5 +30,12 @@ Route::get('/hello/{name}', function ($name) {
 
 Route::get('/user/{id}/{name}', function ($id, $name) {
 
-	return 'User id is: ' . $id . ' Name is: ' . $name;
+	return 'This is ' .$name . ' with id ' .$id;
+});
+
+Route::get('/table/{number?}', function ($number = 2) {
+	for ($i=1; $i <= 10 ; $i++) { 
+
+		echo "$number x $i = " . $number*$i ." <br>";
+	}
 });
